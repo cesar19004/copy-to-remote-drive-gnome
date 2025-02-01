@@ -19,6 +19,7 @@ cp .env.example .env
 ```
 
 - Update environment variables
+
 Open the .env file and replace the variables with your desired values.
 
 - Install the script as a service and start it
