@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs /usr/local/bin/backup_files.bash on a Schedule
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+Unit=backup_files.service
+
+[Install]
+WantedBy=timers.target

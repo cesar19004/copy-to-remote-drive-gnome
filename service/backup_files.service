@@ -1,0 +1,5 @@
+[Unit]
+Description=Copy specified files to google drive using gio. Useful to make backups
+
+[Service]
+ExecStart=/usr/local/bin/backup_files.bash
