@@ -1,7 +1,4 @@
 #!/bin/bash
-
-source .env
-
 #Google drive account where files will be copied
 TARGET_ACCOUNT="google-drive://$TARGET_ACCOUNT"
 
@@ -38,4 +35,3 @@ then
 	echo "Unmounting remote drive"
 	gio mount -u "$TARGET_ACCOUNT" || exit 1
 fi
-
