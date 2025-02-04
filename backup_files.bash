@@ -26,6 +26,8 @@ fi
 for i in "${!FILES_TO_BACKUP[@]}"
 do
 	echo "copying $i..."
+	REMOTE_FILE_PATH=$(echo "$TARGET_PATH/${FILES_TO_BACKUP[$i]}" | grep -iaP "^.*\/")
+	gio mkdir -p "$REMOTE_FILE_PATH"
 	gio copy $( echo $i) "$TARGET_PATH/${FILES_TO_BACKUP[$i]}"
 	echo "Backup completed successfully!"
 done
