@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #Google drive account where files will be copied
 TARGET_ACCOUNT="google-drive://$TARGET_ACCOUNT"
 
