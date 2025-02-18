@@ -1,5 +1,5 @@
 [Unit]
-Description=Runs /usr/local/bin/backup_files.bash on a Schedule
+Description=Runs ~/.bin/backup_files.bash on a Schedule
 
 [Timer]
 OnCalendar=weekly
