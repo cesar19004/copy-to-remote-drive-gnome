@@ -6,6 +6,9 @@ SCRIPTPATH="$HOME/.bin"
 # Create a path to store the script if it does not exist.
 mkdir -p $SCRIPTPATH
 
+# Create a path to store the service if it does not exist.
+mkdir -p $SERVICEPATH
+
 #Append backup_files.bash without shebang to .env
 { cat .env ; echo''; tail -n +2 backup_files.bash; } > "$SCRIPTPATH/backup_files.bash" || exit 1
 
